@@ -1,11 +1,11 @@
 Summary:	Content-Preserving PDF Transformation System
 Name:		qpdf
-Version:	3.0.2
+Version:	5.0.0
 Release:	1
 License:	Artistic-2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/qpdf/%{name}-%{version}.tar.gz
-# Source0-md5:	af6f6f964481295a6ca0766185bfa274
+# Source0-md5:	d501c61a8979132f6d601641483850cc
 BuildRequires:	autoconf
 BuildRequires:	libtool
 BuildRequires:	libstdc++-devel
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/fix-qdf
 %attr(755,root,root) %{_bindir}/qpdf
 %attr(755,root,root) %{_bindir}/zlib-flate
-%attr(755,root,root) %ghost %{_libdir}/libqpdf.so.8
+%attr(755,root,root) %ghost %{_libdir}/libqpdf.so.13
 %attr(755,root,root) %{_libdir}/libqpdf.so.*.*.*
 %{_mandir}/man1/*1.*
 
