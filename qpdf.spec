@@ -1,11 +1,11 @@
 Summary:	Content-Preserving PDF Transformation System
 Name:		qpdf
-Version:	5.0.0
+Version:	5.1.2
 Release:	1
 License:	Artistic-2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/qpdf/%{name}-%{version}.tar.gz
-# Source0-md5:	d501c61a8979132f6d601641483850cc
+# Source0-md5:	0bd15ef5eea5f628951ab456c84e78ec
 BuildRequires:	autoconf
 BuildRequires:	libtool
 BuildRequires:	libstdc++-devel
@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} -r $RPM_BUILD_ROOT%{_datadir}/doc/qpdf
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
